@@ -42,15 +42,17 @@ char getPrimeraLetra(string* a)
 //Ejemplos de palindromos: Ana, arenera, arepera, anilina, ananá, Malayalam, Neuquén, Oruro, oso, radar, reconocer, rotor, salas, seres, somos, sometemos
 
 bool esPalindromo(string* a)
-{
- string pal=*a;
- string palindroma= " ";
-for(int x=0; x<pal.length();x++){
-        char=pal[x];
-        palindroma+=char;
-}
 
-    return pal == palindroma;
+{
+
+    string reves="";
+
+  for(int x=sizeof(a);x>0;x--){
+
+        reves.append(*a[x]);
+    }
+
+    return reves==*a;
 
 }
 
