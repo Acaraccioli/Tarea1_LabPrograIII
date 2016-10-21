@@ -47,9 +47,9 @@ bool esPalindromo(string* a)
 
     string reves="";
 
-  for(int x=sizeof(a);x>0;x--){
+  for(int x=(*a).length()-1;x>=0;x--){
 
-        reves.append(*a[x]);
+        reves+=(*a)[x];
     }
 
     return reves==*a;
